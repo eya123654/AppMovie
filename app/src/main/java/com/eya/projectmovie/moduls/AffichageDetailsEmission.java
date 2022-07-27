@@ -73,7 +73,7 @@ public class AffichageDetailsEmission extends YouTubeBaseActivity {
         Log.d("idtag", "" + id);
         String name = i.getStringExtra("movie_title");
         String over = i.getStringExtra("overview");
-        String rating = i.getStringExtra("rating");
+       
 
         Retrofit retrofit = new Retrofit.Builder().baseUrl("https://api.themoviedb.org/3/").addConverterFactory(GsonConverterFactory.create()).build();
         Details details = retrofit.create(Details.class);
